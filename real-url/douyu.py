@@ -89,8 +89,8 @@ class DouYu:
             try:
                 data = self.get_js()
                 real_url["m3u8"] = data["data"]["url"]
-            except:
-                pass
+            except Exception as e:
+                print(e)
         return json.dumps(real_url, indent=2, ensure_ascii=False)
 
 
