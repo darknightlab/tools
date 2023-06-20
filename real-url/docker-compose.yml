@@ -1,0 +1,7 @@
+version: '3'
+services:
+  real-url:
+    image: darknightlab/real-url:main
+    ports:
+      - 80:80
+    restart: always
