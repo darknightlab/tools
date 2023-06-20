@@ -1,8 +1,8 @@
 # 创建一个容器用于运行main.py的网页服务器
 FROM alpine:latest
 
-# 安装python3
-RUN apk add --no-cache python3 py3-pip \
+# 安装python3,pip,javascript
+RUN apk add --no-cache python3 py3-pip nodejs \
     && pip3 install --upgrade pip
 
 # 设置工作目录
