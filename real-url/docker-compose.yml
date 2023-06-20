@@ -1,6 +1,7 @@
 version: '3'
 services:
   real-url:
+    container_name: real-url
     image: darknightlab/real-url:main
     ports:
       - 80:80
